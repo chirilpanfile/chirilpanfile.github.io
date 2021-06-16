@@ -24,8 +24,15 @@
         font-size: 15px;
     }
 
+    &__info {
+        width: 50%;
+        padding-left: 30px;
+
+    }
+
     &__image {
         min-width: 322px;
+
         background: url('/src/img/project/1.png') center (center/cover) no-repeat;
     }
 }

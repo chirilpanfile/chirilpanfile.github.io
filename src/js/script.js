@@ -7,4 +7,23 @@ $(document).ready(function () {
             .addClass('media__content-active')
 
     })
+
+    const menu = document.querySelector('.header__navigation_tabs')
+    const hamburger = document.querySelector('.header__burger')
+    const item = document.querySelectorAll('.header__navigation_tabs')
+    console.log(menu);
+
+    hamburger.addEventListener('click', () => {
+        console.log(1);
+        hamburger.classList.toggle('header__burger-active');
+        menu.classList.toggle('header__navigation_tabs-active');
+    });
+
+    item.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('header__navigation_tabs-active');
+        })
+
+    })
 })

@@ -1,13 +1,15 @@
 .promo {
-    height: 100vh;
+    min-height: 100vh;
     background: url('/src/img/bg.png') center (center/cover) no-repeat;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     // align-items: center;
 
     &__card {
         display: flex;
         margin-top: 300px;
+        flex-wrap: wrap;
 
         &-left {
             padding-top: 43px;

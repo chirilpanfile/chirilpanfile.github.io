@@ -21,6 +21,7 @@
             display: flex;
             text-align: center;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         &:before {
@@ -66,6 +67,19 @@
             &:hover {
                 color: $main-color;
             }
+        }
+    }
+
+    &__burger {
+        width: 25px;
+        height: 25px;
+        transform: rotate(90deg);
+        cursor: pointer;
+        z-index: 1;
+
+        span {
+            margin: 0px 3px;
+            border: 1px solid #000;
         }
     }
 }

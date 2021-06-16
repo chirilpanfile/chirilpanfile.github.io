@@ -12,12 +12,19 @@
     max-width: 1050px;
     width: 100%;
     margin: 0 auto;
+    // padding: 0 20px;
 
     &__small {
         max-width: 724px;
         width: 100%;
         margin: 0 auto;
+        // padding: 0 80px;
+
     }
+}
+
+.media {
+    min-height: 100vh;
 }
 
 @import "./blocks/header";
@@ -30,3 +37,4 @@
 @import "./blocks/projects";
 @import "./blocks/contacts";
 @import "./blocks/input";
+@import "base/media";
