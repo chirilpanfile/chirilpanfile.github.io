@@ -5,7 +5,10 @@ $(document).ready(function () {
         $('div.media').find('div.media__content')
             .removeClass('media__content-active', 2500).eq($(this).index())
             .addClass('media__content-active')
-
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     })
 
     const menu = document.querySelector('.header__navigation_tabs')
@@ -14,12 +17,19 @@ $(document).ready(function () {
     // console.log(menu);
 
     hamburger.addEventListener('click', () => {
-        console.log(1);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
         hamburger.classList.toggle('header__burger-active');
         menu.classList.toggle('header__navigation_tabs-active');
     });
 
     item.forEach(item => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
         item.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('header__navigation_tabs-active');
