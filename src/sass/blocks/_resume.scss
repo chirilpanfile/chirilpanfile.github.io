@@ -1,0 +1,73 @@
+.resume {
+    background-color: #e6dace;
+    text-align: center;
+    padding-bottom: 100px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    &__exp {
+        margin-top: 38px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__date {
+        display: flex;
+        flex-direction: column;
+        text-align-last: left;
+        width: 100%;
+
+        span {
+            font-size: 14px;
+            padding: 2px 0;
+        }
+
+        strong {
+            font-size: 20px;
+            color: $main-color;
+            margin-bottom: 4px;
+        }
+
+
+    }
+
+    &__descr {
+        text-align: justify;
+        line-height: 1.5em;
+        font-size: 17px;
+        font-weight: 300;
+        padding: 20px 10px;
+    }
+
+    &__skills {
+        width: 100%;
+        margin-top: 30px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        li {
+            margin-right: 50px;
+            margin-top: 15px;
+
+            &:nth-child(3) {
+                margin-right: 26px;
+            }
+
+            &:before {
+                content: '';
+                display: inline-block;
+                margin-right: 10px;
+                width: 15px;
+                height: 15px;
+                background-color: $main-color;
+            }
+        }
+    }
+}

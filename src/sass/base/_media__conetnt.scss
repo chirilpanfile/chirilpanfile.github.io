@@ -1,0 +1,11 @@
+.media {
+
+    &__content {
+        display: none;
+        transition: 0.9s all;
+
+        &-active {
+            display: block;
+        }
+    }
+}

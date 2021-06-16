@@ -1,0 +1,31 @@
+.button {
+    width: 130px;
+    height: 35px;
+    background: none;
+    border-radius: 24px;
+    border: 0.12rem solid black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 38px;
+    transition: 0.5s all;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $main-color;
+        color: #fff;
+        border: 0.12rem solid $main-color;
+    }
+
+    &_active {
+        background-color: $main-color;
+        border: 0.12rem solid $main-color;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            border: 0.12rem solid $main-color;
+
+            color: black;
+        }
+    }
+}

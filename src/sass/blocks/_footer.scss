@@ -1,0 +1,30 @@
+.footer {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 64px;
+
+    &__name {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &__underline {
+        margin-top: 10px;
+        width: 160px;
+        height: 2px;
+        background-color: $main-color;
+    }
+
+    &__number {
+        margin-top: 10px;
+
+        a {
+            text-decoration: underline;
+            color: #000;
+            font-size: 14px;
+        }
+    }
+}

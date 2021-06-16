@@ -1,0 +1,21 @@
+.title {
+    padding-top: 245px;
+    font-size: 35px;
+    line-height: 0.95em;
+    font-weight: 700;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 2px;
+        width: 20px;
+        height: 20px;
+
+        background-color: $main-color;
+    }
+}
+
+.subtitle {
+    padding: 60px 20px;
+    font-weight: 300;
+}
