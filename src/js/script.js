@@ -28,6 +28,10 @@ $(document).ready(function () {
     })
 
     $('#resume-btn').on('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
         let data = $('.media__content-active').eq(this).index()
         document.querySelector('.media__content-active').classList.toggle('media__content-active')
         $('.media__content').eq(data + 2).addClass('media__content-active')
@@ -36,6 +40,11 @@ $(document).ready(function () {
     })
 
     $('#projects-btn').on('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
         let data = $('.media__content-active').eq(this).index()
         document.querySelector('.media__content-active').classList.toggle('media__content-active')
         $('.media__content').eq(data + 3).addClass('media__content-active')
