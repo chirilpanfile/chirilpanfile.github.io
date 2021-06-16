@@ -61,4 +61,16 @@ $(document).ready(function () {
         document.querySelector('.header__navigation_tab-active').classList.toggle('header__navigation_tab-active')
         $('.header__navigation_tab').eq(data + 3).addClass('header__navigation_tab-active')
     })
+    $('#logo').on('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
+        let data = $('.media__content-active').eq(this).index()
+        document.querySelector('.media__content-active').classList.toggle('media__content-active')
+        $('.media__content').eq(data + 1).addClass('media__content-active')
+        document.querySelector('.header__navigation_tab-active').classList.toggle('header__navigation_tab-active')
+        $('.header__navigation_tab').eq(data + 1).addClass('header__navigation_tab-active')
+    })
 })
