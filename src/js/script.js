@@ -11,7 +11,7 @@ $(document).ready(function () {
     const menu = document.querySelector('.header__navigation_tabs')
     const hamburger = document.querySelector('.header__burger')
     const item = document.querySelectorAll('.header__navigation_tabs')
-    console.log(menu);
+    // console.log(menu);
 
     hamburger.addEventListener('click', () => {
         console.log(1);
@@ -27,20 +27,19 @@ $(document).ready(function () {
 
     })
 
+    $('#resume-btn').on('click', function () {
+        let data = $('.media__content-active').eq(this).index()
+        document.querySelector('.media__content-active').classList.toggle('media__content-active')
+        $('.media__content').eq(data + 2).addClass('media__content-active')
+        document.querySelector('.header__navigation_tab-active').classList.toggle('header__navigation_tab-active')
+        $('.header__navigation_tab').eq(data + 2).addClass('header__navigation_tab-active')
+    })
+
+    $('#projects-btn').on('click', function () {
+        let data = $('.media__content-active').eq(this).index()
+        document.querySelector('.media__content-active').classList.toggle('media__content-active')
+        $('.media__content').eq(data + 3).addClass('media__content-active')
+        document.querySelector('.header__navigation_tab-active').classList.toggle('header__navigation_tab-active')
+        $('.header__navigation_tab').eq(data + 3).addClass('header__navigation_tab-active')
+    })
 })
-window.addEventListener('load', function (e) {
-
-    window.applicationCache.addEventListener('updateready', function (e) {
-        if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-            // Browser downloaded a new app cache.
-            // Swap it in and reload the page to get the new hotness.
-            window.applicationCache.swapCache();
-            if (confirm('A new version of this site is available. Load it?')) {
-                window.location.reload();
-            }
-        } else {
-            // Manifest didn't changed. Nothing new to server.
-        }
-    }, false);
-
-}, false);

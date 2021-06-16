@@ -13,6 +13,8 @@
         height: 100%;
     }
 
+    z-index: 1;
+
     &__name {
         font-size: 25px;
         font-weight: 700;
@@ -76,6 +78,7 @@
         transform: rotate(90deg);
         cursor: pointer;
         z-index: 1;
+        display: none;
 
         span {
             margin: 0px 3px;
