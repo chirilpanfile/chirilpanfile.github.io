@@ -1,0 +1,126 @@
+@media(max-width : 991px) {
+    .header {
+
+        &__name {
+
+            &_logo {
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 20px;
+
+            }
+
+            &:before {
+                content: none;
+            }
+
+            span {
+                font-size: 14px !important;
+            }
+        }
+
+        &__navigation {
+            padding: 0;
+
+            &_tab {
+                font-size: 14px;
+            }
+
+            &_tabs {
+                width: 350px;
+            }
+        }
+    }
+
+    .promo {
+        background: none;
+
+        &__card {
+            justify-content: center;
+            margin-top: 180px;
+        }
+    }
+}
+
+@media(max-width : 767px) {
+    .container {
+        &__small {
+            padding: 0 30px;
+        }
+    }
+
+    .header {
+        margin: 0;
+        padding: 30px;
+
+        &__navigation {
+
+            &_tabs {
+                transition: 0.5s;
+                position: absolute;
+                top: -100vh;
+                width: 100%;
+                height: 100vh;
+                left: 0px;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+                padding-top: 140px;
+                background: white;
+
+                &-active {
+                    top: 100%;
+                }
+            }
+
+            &_tab {
+                font-size: 30px;
+                padding-top: 20px;
+            }
+        }
+
+        &__burger {
+            display: block;
+        }
+    }
+
+    .block {
+
+        &-skills {
+            padding-right: 0;
+            width: 100%;
+        }
+    }
+
+    .resume {
+        &__date {
+            align-items: flex-start;
+            margin-left: 10px;
+            width: 100%;
+        }
+
+        &__descr {
+            width: 100%;
+        }
+
+        &__skills {
+            li {
+                width: 100%;
+            }
+        }
+    }
+
+    .project {
+
+        &__info {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &__image {
+            min-height: 410px;
+            width: 100%;
+        }
+    }
+}
