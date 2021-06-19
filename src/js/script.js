@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     const menu = document.querySelector('.header__navigation_tabs')
     const hamburger = document.querySelector('.header__burger')
-    const item = document.querySelectorAll('.header__navigation_tabs')
+    const item = document.querySelectorAll('.header__navigation_tab')
     // console.log(menu);
 
     hamburger.addEventListener('click', () => {
